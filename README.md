@@ -28,6 +28,6 @@ const object = {
 
 for (const [key, value] of object.getIterator()) {
   // key: 'a'
-  // object[key] does't throw error
+  // object[key] doesn't throw error
 }
 ```
