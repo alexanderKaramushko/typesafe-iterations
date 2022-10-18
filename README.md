@@ -1,4 +1,4 @@
-## The small lib to make typesafe iterable data structures.
+## The small lib to make typesafe iterable objects.
 
 ### Problem
 
