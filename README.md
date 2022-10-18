@@ -9,7 +9,8 @@ const object = {
 }
 
 for (const key of object) {
-  // object[key] throws ts error as key is of a string type
+  // key: string
+  // object[key] ts throws index error 
 }
 ```
 
@@ -26,6 +27,7 @@ const object = {
 }
 
 for (const [key, value] of object.getIterator()) {
-  // object[key] does't throw error as key is of a literal 'a' type
+  // key: 'a'
+  // object[key] does't throw error
 }
 ```
