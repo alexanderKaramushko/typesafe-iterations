@@ -11,6 +11,10 @@ declare global {
   }
 }
 
+/**
+ * @description inject typesafe getIterator function into Object.prototype
+ * @example for (const [key, value] of object.getIterator()) {}
+ */
 function init(): void {
   Object.prototype.getIterator = function<T extends object>(this: T): IterableObject<T> {
     return {
